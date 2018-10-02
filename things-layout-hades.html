@@ -159,7 +159,7 @@
 			},
 
 			tabChanged: function(event) {
-				this.fire('things-layout-tab-changed', event);
+				this.fire('things-layout-tab-changed', event.currentTarget.id);
 			}
 
 		});
