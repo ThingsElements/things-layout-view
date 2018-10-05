@@ -51,8 +51,12 @@
 			.subtitle {
 				@apply(--things-default-padding);
 				@apply(--things-subtitle);
-				padding-left: 16px
+				padding-left: 16px;
 			}
+			
+			 paper-tabs{
+				@apply(--things-hades-tabs-style);
+     		 } 
 
 		</style>
 
@@ -161,7 +165,6 @@
 			tabChanged: function(event) {
 				this.fire('things-layout-tab-changed', event.currentTarget.id);
 			}
-
 		});
 	</script>
 </dom-module>
